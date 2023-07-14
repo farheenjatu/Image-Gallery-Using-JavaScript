@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery Using JavaScript</title>
+</head>
+<body>
+    <div class="product">
+        <div class="product-small-img">
+
+            <img src="img k1.avif" onclick="myfunction(this)">
+            <img src="img k2.avif" onclick="myfunction(this)">
+            <img src="img k3.avif" onclick="myfunction(this)">
+            <img src="img k4.avif" onclick="myfunction(this)">
+            <img src="img k5.avif" onclick="myfunction(this)">
+        </div>
+        <div class="img-container">
+            <img id="imageBox" src="img k1.avif">
+        </div>
+    </div>
+   <script>
+       function myfunction(smallImg)
+       {
+           var fullImg = document.getElementById("imageBox");
+           fullImg.src = smallImg.src;
+       }
+   </script> 
+</body>
+</html>
